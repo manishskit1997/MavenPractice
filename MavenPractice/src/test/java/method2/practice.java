@@ -12,7 +12,9 @@ public class practice {
 		System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
 		WebDriver driver =new ChromeDriver();
 		driver.get("https://www.repatha.de/");
-		Thread.sleep(3000);
+		String sorece = driver.getPageSource();
+		System.out.println(sorece);
+		Thread.sleep(2000);		
 		driver.close();
 	}
 
