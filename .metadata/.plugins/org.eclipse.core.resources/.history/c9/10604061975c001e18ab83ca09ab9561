@@ -1,0 +1,13 @@
+package com.readtheExcel;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class readExc {
+	public static void main(String[] args) throws FileNotFoundException {
+		String ExcelFilePath="./DataFile/MyExcel.xlsx";
+		FileInputStream fis=new FileInputStream(ExcelFilePath);
+		WorkBook book=new WorkBook.factroy
+	}
+
+}

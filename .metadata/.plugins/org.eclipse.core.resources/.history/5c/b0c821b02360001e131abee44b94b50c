@@ -1,0 +1,15 @@
+package pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class searchCustomePage {
+	public WebDriver ldriver;
+
+	public searchCustomePage(WebDriver ldriver)
+	{
+		this.ldriver=ldriver;
+		PageFactory.initElements(ldriver,this);
+	}
+
+}

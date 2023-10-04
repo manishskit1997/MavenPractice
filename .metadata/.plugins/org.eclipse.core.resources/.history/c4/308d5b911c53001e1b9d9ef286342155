@@ -1,0 +1,21 @@
+package programPractice;
+
+public class RevWord {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1="Manish Kumar";
+		String[] s2=s1.split(" ");
+		for(int i=0;i<s2.length;i++)
+		{
+			String s3=s2[i];
+			String rev="";
+			for(int j=s3.length()-1;j>=0;j--)
+			{
+				rev=rev+s3.charAt(j);
+			}
+			System.out.println(rev);
+		}
+	}
+
+}

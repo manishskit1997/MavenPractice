@@ -1,0 +1,50 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class AddCustomerPage {
+	
+	public WebDriver ldriver;
+	
+	public AddCustomerPage(WebDriver ldriver)
+	{
+		PageFactory.initElements(ldriver,ldriver);
+	}
+	
+	   By linkCustomer_menu = By.xpath("//a[@href='#']//p[contains(text(),'Customers')]");
+	   By linkCustomer_menuitem=By.xpath("//a[@href='/Admin/Customer/List']//p[text()=' Customers']");
+	   
+	   By btnAddnew=By.xpath("//a[@class='btn btn-primary']");
+	   
+	   By txtEmail=By.xpath("//div[@class='card-body']/descendant::input[@name='Email']");
+	   By txtPassword=By.xpath("//div[@class='card-body']/descendant::input[@name='Password']");
+	   By txtFirstName=By.xpath("//div[@class='card-body']/descendant::input[@name='FirstName']");
+	   By txtLastName=By.xpath("//div[@class='card-body']/descendant::input[@name='LastName']");
+	   
+	   By selectGender=By.xpath("//div[@class='card-body']/descendant::input[@id='Gender_Male']");
+	   
+	   By enterDateOfBirth=By.xpath("//div[@class='card-body']/descendant::input[@name='DateOfBirth']");
+	   
+	   By txtCompanyName=By.xpath("//div[@class='card-body']/descendant::input[@name='Company']");
+	   
+	   By selectTextAttempt=By.xpath("//div[@class='card-body']/descendant::input[@name='IsTaxExempt']");
+	   
+	   By txtNewLetter=By.xpath("//div[@class='card-body']/descendant::ul[@id='SelectedNewsletterSubscriptionStoreIds_taglist']");
+	   
+	   By SelectCustomRole=By.xpath("//div[@class='card-body']/descendant::input[@aria-describedby='SelectedCustomerRoleIds_taglist']");
+	   
+	   By dropdoenManageVendor=By.xpath("//div[@class='card-body']/descendant::select[@name='VendorId']");
+	   
+	   By checkboxActive=By.xpath("//div[@class='card-body']/descendant::input[@name='Active']");
+	   
+	   By textAreaBox=By.xpath("//div[@class='card-body']/descendant::textarea[@name='AdminComment']");
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+}

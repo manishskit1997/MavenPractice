@@ -1,0 +1,11 @@
+package com.propertiesreader;
+
+import java.io.FileReader;
+
+public class Propertiesreader {
+	public static void main(String[] args) {
+		
+		FileReader read=new FileReader("data.properties");
+	}
+
+}

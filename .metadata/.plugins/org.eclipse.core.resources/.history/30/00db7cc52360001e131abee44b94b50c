@@ -1,0 +1,22 @@
+package pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import utilities.waithelaper;
+
+public class searchCustomePage {
+	public WebDriver ldriver;
+	waithelaper waithelper;
+
+	public searchCustomePage(WebDriver ldriver)
+	{
+		this.ldriver=ldriver;
+		PageFactory.initElements(ldriver,this);
+	    waithelper=new waithelaper(ldriver);
+	}
+	
+	FindBy(how=How.xpath using ="//input[@name='SearchEmail']");
+
+}

@@ -1,0 +1,10 @@
+package com.mavn.prctaice;
+
+public class practice {
+	
+	@Test
+	void test practice() {
+		syso
+	}
+
+}

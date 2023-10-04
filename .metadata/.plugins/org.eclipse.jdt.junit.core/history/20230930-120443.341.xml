@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testRun" project="SDETCucumberFramework" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="testRunner.testRun" time="0.107">
+    <testsuite name="Customer" time="0.107">
+      <testcase name="Add new customer" classname="Customer" time="0.107">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'User can view Dashboard' and 8 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Then("User can view Dashboard")
+public void user_can_view_dashboard() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user click on customer menu")
+public void user_click_on_customer_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Click on Customer menu item")
+public void click_on_customer_menu_item() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("click on add new button")
+public void click_on_add_new_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user can view  add new customer page")
+public void user_can_view_add_new_customer_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user enter the customer infomation")
+public void user_enter_the_customer_infomation() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("click on save button")
+public void click_on_save_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user can view the confirmation message {string}")
+public void user_can_view_the_confirmation_message(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("close the browser")
+public void close_the_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

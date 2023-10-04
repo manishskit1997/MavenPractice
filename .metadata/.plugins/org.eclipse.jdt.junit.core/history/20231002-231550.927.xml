@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testRun" project="SDETCucumberFramework" tests="3" started="3" failures="0" errors="3" ignored="0">
+  <testsuite name="testRunner.testRun" time="105.635">
+    <testsuite name="Login" time="105.635">
+      <testcase name="Successful Login with Valid Credentials" classname="Login" time="18.667">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'close browser' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("close browser")
+public void close_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Login Data driven #1" classname="Login" time="43.623">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'close browser' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("close browser")
+public void close_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Login Data driven #2" classname="Login" time="43.342">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'close browser' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("close browser")
+public void close_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

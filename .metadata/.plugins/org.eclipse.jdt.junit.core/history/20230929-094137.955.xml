@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testRun" project="SDETCucumberFramework" tests="3" started="3" failures="1" errors="0" ignored="0">
+  <testsuite name="testRunner.testRun" time="39.384">
+    <testsuite name="Login" time="39.384">
+      <testcase name="Successful Login with Valid Credentials" classname="Login" time="17.878"/>
+      <testcase name="Login Data driven #1" classname="Login" time="16.601"/>
+      <testcase name="Login Data driven #2" classname="Login" time="4.905">
+        <failure>java.lang.AssertionError&#13;
+	at org.junit.Assert.fail(Assert.java:87)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:42)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:53)&#13;
+	at stepDefinations.Steps.page_title_should_be(Steps.java:51)&#13;
+	at ✽.Page Title should be "Dashboard / nopCommerce administration"(file:///D:/JavaProgramExecuation/SDETCucumberFramework/./Features/Login.feature:21)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

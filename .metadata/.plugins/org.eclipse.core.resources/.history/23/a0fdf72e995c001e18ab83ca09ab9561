@@ -1,0 +1,15 @@
+package com.readtheExcel;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class readExc {
+	public static void main(String[] args) throws IOException {
+		String ExcelFilePath=".\\DataFile\\MyExcel.xlsx";
+		FileInputStream inputSteam=new FileInputStream(ExcelFilePath);
+		XSSFWorkbook workbook=new XSSFWorkbook(inputSteam);
+	}
+
+}

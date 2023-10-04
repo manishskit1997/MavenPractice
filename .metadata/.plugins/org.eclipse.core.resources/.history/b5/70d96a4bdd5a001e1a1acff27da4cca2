@@ -1,0 +1,9 @@
+package com.propertiesreader;
+
+public class Propertiesreader {
+	public static void main(String[] args) {
+		
+		FileReader read=new FileReader("./data.properties");
+	}
+
+}
