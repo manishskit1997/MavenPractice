@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Functional test suite">
+  <test thread-count="5" name="Functional testing" >
+    <classes>
+      <class name="BatchTesting.testcase3"/>
+      <class name="BatchTesting.Testcase4"/>
+    </classes>
+  </test> 
+</suite> 

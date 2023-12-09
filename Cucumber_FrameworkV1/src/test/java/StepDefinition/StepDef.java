@@ -3,21 +3,19 @@ package StepDefinition;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
 
 import PageObject.LoginPage;
 import io.cucumber.java.en.*;
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class StepDef {
 
 	public WebDriver driver;
 	LoginPage loginPg;
-
-
+	
 	@Given("User Launch Chrome browser")
 	public void user_launch_chrome_browser() {
-		System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
 		driver =new ChromeDriver();
 		loginPg=new LoginPage(driver);
 		

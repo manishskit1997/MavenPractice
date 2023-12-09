@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="testRun" project="SDETCucumberFramework" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="testRunner.testRun" time="60.965">
-    <testsuite name="Customer" time="60.965">
-      <testcase name="Add new customer" classname="Customer" time="60.965"/>
-    </testsuite>
-  </testsuite>
-</testrun>

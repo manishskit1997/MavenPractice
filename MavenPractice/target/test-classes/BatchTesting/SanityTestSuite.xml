@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sanity test suite">
+  <test thread-count="5" name="Sanity testing" >
+    <classes>
+      <class name="BatchTesting.testcase1"/>
+      <class name="BatchTesting.testcase2"/>
+    </classes>
+  </test> 
+</suite> 

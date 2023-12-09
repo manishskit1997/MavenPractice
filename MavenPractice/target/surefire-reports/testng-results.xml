@@ -1,17 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="7" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-04T10:09:38 IST" name="Suite" finished-at="2023-10-04T10:09:49 IST" duration-ms="10996">
+  <suite started-at="2023-10-29T17:36:07 IST" name="Surefire suite" finished-at="2023-10-29T17:36:12 IST" duration-ms="5159">
     <groups>
+      <group name="Sanity">
+        <method signature="TestngClass2.bpple()[pri:0, instance:com.testNgAnnotation.TestngClass2@460d0a57]" name="bpple" class="com.testNgAnnotation.TestngClass2"/>
+        <method signature="TestngClass2.test1()[pri:0, instance:com.testNgAnnotation.TestngClass2@460d0a57]" name="test1" class="com.testNgAnnotation.TestngClass2"/>
+        <method signature="TestngClass2.test2()[pri:0, instance:com.testNgAnnotation.TestngClass2@460d0a57]" name="test2" class="com.testNgAnnotation.TestngClass2"/>
+      </group> <!-- Sanity -->
+      <group name="regression">
+        <method signature="TestngClass2.bppple()[pri:0, instance:com.testNgAnnotation.TestngClass2@460d0a57]" name="bppple" class="com.testNgAnnotation.TestngClass2"/>
+      </group> <!-- regression -->
     </groups>
-    <test started-at="2023-10-04T10:09:38 IST" name="Test" finished-at="2023-10-04T10:09:49 IST" duration-ms="10996">
-      <class name="method2.practice">
-        <test-method signature="practice()[pri:0, instance:method2.practice@694abbdc]" started-at="2023-10-04T10:09:38 IST" name="practice" finished-at="2023-10-04T10:09:49 IST" duration-ms="10955" status="PASS">
+    <test started-at="2023-10-29T17:36:07 IST" name="Surefire test" finished-at="2023-10-29T17:36:12 IST" duration-ms="5159">
+      <class name="com.testNgAnnotation.TestngClass2">
+        <test-method signature="bpple()[pri:0, instance:com.testNgAnnotation.TestngClass2@460d0a57]" started-at="2023-10-29T17:36:07 IST" name="bpple" finished-at="2023-10-29T17:36:07 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- practice -->
-      </class> <!-- method2.practice -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- bpple -->
+        <test-method signature="bppple()[pri:0, instance:com.testNgAnnotation.TestngClass2@460d0a57]" started-at="2023-10-29T17:36:07 IST" name="bppple" finished-at="2023-10-29T17:36:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bppple -->
+        <test-method signature="test1()[pri:0, instance:com.testNgAnnotation.TestngClass2@460d0a57]" started-at="2023-10-29T17:36:07 IST" name="test1" finished-at="2023-10-29T17:36:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:com.testNgAnnotation.TestngClass2@460d0a57]" started-at="2023-10-29T17:36:07 IST" name="test2" finished-at="2023-10-29T17:36:07 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- com.testNgAnnotation.TestngClass2 -->
+      <class name="TestListnerexam.TestClass">
+        <test-method signature="serahword()[pri:0, instance:TestListnerexam.TestClass@64cd705f]" started-at="2023-10-29T17:36:07 IST" name="serahword" finished-at="2023-10-29T17:36:12 IST" duration-ms="5067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- serahword -->
+        <test-method signature="testfail()[pri:0, instance:TestListnerexam.TestClass@64cd705f]" started-at="2023-10-29T17:36:12 IST" name="testfail" finished-at="2023-10-29T17:36:12 IST" duration-ms="9" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at TestListnerexam.TestClass.testfail(TestClass.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testfail -->
+        <test-method signature="testskip()[pri:0, instance:TestListnerexam.TestClass@64cd705f]" started-at="2023-10-29T17:36:12 IST" name="testskip" finished-at="2023-10-29T17:36:12 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[skip exception throw..]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: skip exception throw..
+at TestListnerexam.TestClass.testskip(TestClass.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testskip -->
+      </class> <!-- TestListnerexam.TestClass -->
+      <class name="com.testNgAnnotation.TestNgPractice">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testNgAnnotation.TestNgPractice@13e39c73]" started-at="2023-10-29T17:36:07 IST" name="beforeClass" finished-at="2023-10-29T17:36:07 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNgAnnotation.TestNgPractice@13e39c73]" started-at="2023-10-29T17:36:07 IST" name="beforeMethod" finished-at="2023-10-29T17:36:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test1()[pri:0, instance:com.testNgAnnotation.TestNgPractice@13e39c73]" started-at="2023-10-29T17:36:07 IST" name="test1" finished-at="2023-10-29T17:36:07 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNgAnnotation.TestNgPractice@13e39c73]" started-at="2023-10-29T17:36:07 IST" name="afterMethod" finished-at="2023-10-29T17:36:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="test2()[pri:0, instance:com.testNgAnnotation.TestNgPractice@13e39c73]" started-at="2023-10-29T17:36:07 IST" name="test2" finished-at="2023-10-29T17:36:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNgAnnotation.TestNgPractice@13e39c73]" started-at="2023-10-29T17:36:07 IST" name="beforeMethod" finished-at="2023-10-29T17:36:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNgAnnotation.TestNgPractice@13e39c73]" started-at="2023-10-29T17:36:07 IST" name="afterMethod" finished-at="2023-10-29T17:36:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testNgAnnotation.TestNgPractice@13e39c73]" started-at="2023-10-29T17:36:07 IST" name="afterClass" finished-at="2023-10-29T17:36:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.testNgAnnotation.TestNgPractice -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

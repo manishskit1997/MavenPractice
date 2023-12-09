@@ -4,6 +4,31 @@
   <artifactId>inetBankingV1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+       <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.11.0</version>
+          <configuration>
+            <!-- put your configurations here -->
+          </configuration>
+        </plugin>
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.11.0</version>
+          <configuration>
+            <!-- put your configurations here -->
+          </configuration>
+        </plugin>
+        
+      </plugins>
+    </pluginManagement>
+  </build>
+  
   
   <dependencies>
 	  
@@ -79,4 +104,6 @@
 </dependency>
 
   </dependencies>
+  
+  
 </project>
