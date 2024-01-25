@@ -17,15 +17,12 @@ WebDriver driver;
 public Hooks(PickoContainerTextContent PCTC)
 	
 	{
-		this.PCTC=PCTC;
-		
+		this.PCTC=PCTC;	
 	}
-
 @After
 public void AFterSenarion()
 {
 	PCTC.driver.quit();
-	
 }
 
 @AfterStep
